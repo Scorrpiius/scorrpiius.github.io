@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JavaScript</title>
+
+    <style>
+        #square {
+            height: 35px;
+            width: 35px;
+            top: 0;
+            left: 0;
+            background-color: red;
+            position: absolute;
+            transition: 0.5s;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="square" onmouseover="changePosition(this)">Hover</div>
+    <script>
+        function changePosition(obj) {
+           obj.style.top = Math.floor(Math.random()*(window.innerHeight-35)) + "px";
+           obj.style.left = Math.floor(Math.random()*(window.innerWidth-35)) + "px";
+        }
+    </script>
+    
+</body>
+</html>
