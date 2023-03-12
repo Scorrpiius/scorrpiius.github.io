@@ -8,8 +8,22 @@
 
     <style>
         body {
-            background-color:aquamarine;
-        }
+        background-image: linear-gradient(-60deg,transparent,#0ab9cf 14%,#7535e7 28%,#f9132f 42%,#ffbd00 56%,#72a043 70%,#0ab9cf 84%,rgba(0,196,204,0));
+        height: 100%;
+        left: 0;
+        -webkit-mask-image: linear-gradient(90deg,transparent 0,#000 10%);
+        mask-image: linear-gradient(90deg,transparent 0,#000 10%);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transform: translateX(-20%);
+        transform: translateX(-20%);
+        transition: opacity 1s ease,-webkit-transform 7.5s ease-out;
+        transition: opacity 1s ease,transform 7.5s ease-out;
+        transition: opacity 1s ease,transform 7.5s ease-out,-webkit-transform 7.5s ease-out;
+        width: 120%;
+        } 
+        
         #square {
             height: 50px;
             width: 50px;
