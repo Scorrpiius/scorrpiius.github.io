@@ -9,10 +9,8 @@
     <style>
         body {
         background: linear-gradient(to right, rgb(0, 89, 255), rgb(255, 234, 192));
-        height: 100%;
-        width: 100%;
         } 
-        
+        <!--        
         #square {
             height: 50px;
             width: 50px;
@@ -22,7 +20,7 @@
             position: absolute;
             transition: 0.5s;
             text-align: center;
-        }
+        }-->
 
         .boxSelector{
             background-color: azure;
@@ -41,9 +39,86 @@
 </head>
 <body>
 
-    <div class="boxSelector">
+<div class="boxSelector">
         <p>Gradient selector</p>
-    </div>
+        <label for="colors">Nombre de couleurs</label>
+        <select name="colors" id="nbr_colors">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br/>
+        <label for="directions"> Direction du gradient </label>
+        <select name="directions" id="type_direction">
+            <option value="90deg"> Vers la droite </option>
+            <option value="-90deg"> Vers la gauche </option>
+        </select>
+        <br/>
+        <label for="colors">Choix des couleurs</label>
+        <br/>
+
+        <table style="display:none;">
+            <th>
+            </th>
+            <td> Couleur 1 : <br/>
+            <select name="colors" id="color1">
+                <option value="blue">Bleu</option>
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="yellow">Jaune</option>
+                <option value="pink">Rose</option>
+                <option value="indigo">Indigo</option>
+            </select>
+            </td>
+            <td> Couleur 2 : <br/>
+            <select name="colors" id="color2">
+                <option value="blue">Bleu</option>
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="yellow">Jaune</option>
+                <option value="pink">Rose</option>
+                <option value="indigo">Indigo</option>
+            </select>
+            </td>
+            <td> Couleur 3 : <br/>
+            <select name="colors" id="color3">
+                <option value="blue">Bleu</option>
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="yellow">Jaune</option>
+                <option value="pink">Rose</option>
+                <option value="indigo">Indigo</option>
+            </select>
+            </td>
+            <td> Couleur 4 : <br/>
+            <select name="colors" id="color4">
+                <option value="blue">Bleu</option>
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="yellow">Jaune</option>
+                <option value="pink">Rose</option>
+                <option value="indigo">Indigo</option>
+            </select>
+            </td>
+            <td> Couleur 5 : <br/>
+            <select name="colors" id="color5">
+                <option value="blue">Bleu</option>
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="yellow">Jaune</option>
+                <option value="pink">Rose</option>
+                <option value="indigo">Indigo</option>
+            </select>
+            </td>
+        </table>
+        <input name="button" type="button" id="myButton1" onclick="creerGradient(direction, couleurs, nbrCouleurs);" value="Créer le gradient"/>
+</div>
+<script>
+    function creerGradient()
+
+</script>
 
     <!--<div id="square" onmouseover="changePosition(this)"></div>
     <script>
