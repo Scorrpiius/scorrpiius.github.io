@@ -4,24 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test JavaScript</title>
+    <title>Gradient selector</title>
 
     <style>
         body {
-        background-image: linear-gradient(-60deg,transparent,#0ab9cf 14%,#7535e7 28%,#f9132f 42%,#ffbd00 56%,#72a043 70%,#0ab9cf 84%,rgba(0,196,204,0));
+        background: linear-gradient(to right, rgb(0, 89, 255), rgb(255, 234, 192));
         height: 100%;
-        left: 0;
-        -webkit-mask-image: linear-gradient(90deg,transparent 0,#000 10%);
-        mask-image: linear-gradient(90deg,transparent 0,#000 10%);
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        -webkit-transform: translateX(-20%);
-        transform: translateX(-20%);
-        transition: opacity 1s ease,-webkit-transform 7.5s ease-out;
-        transition: opacity 1s ease,transform 7.5s ease-out;
-        transition: opacity 1s ease,transform 7.5s ease-out,-webkit-transform 7.5s ease-out;
-        width: 120%;
+        width: 100%;
         } 
         
         #square {
@@ -29,23 +18,40 @@
             width: 50px;
             top: 0;
             left: 0;
-            background-color:darkorchid;
+            background-color:rgb(230, 118, 170);
             position: absolute;
             transition: 0.5s;
             text-align: center;
+        }
 
+        .boxSelector{
+            background-color: azure;
+            height: 200px;
+            width: 500px;
+            margin: 0 auto;
+            border-radius: 40px;
+            text-align: center;
+        }
+        p{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-variant:small-caps;
+            font-size:x-large;
         }
     </style>
 </head>
 <body>
 
-    <div id="square" onmouseover="changePosition(this)">Hover</div>
+    <div class="boxSelector">
+        <p>Gradient selector</p>
+    </div>
+
+    <!--<div id="square" onmouseover="changePosition(this)"></div>
     <script>
         function changePosition(obj) {
            obj.style.top = Math.floor(Math.random()*(window.innerHeight-50)) + "px";
            obj.style.left = Math.floor(Math.random()*(window.innerWidth-50)) + "px";
         }
-    </script>
+    </script>-->
     
 </body>
 </html>
